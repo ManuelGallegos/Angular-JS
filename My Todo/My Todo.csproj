@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+    <TypeScriptToolsVersion>2.3</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\app\app.module.ts" />
+    <Content Remove="wwwroot\app\todo.service.ts" />
+    <Content Remove="wwwroot\app\Todo.ts" />
+    <Content Remove="wwwroot\main.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\systemjs.config.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="wwwroot\app\app.component.ts" />
+    <TypeScriptCompile Include="wwwroot\app\app.module.ts" />
+    <TypeScriptCompile Include="wwwroot\app\todo.service.ts" />
+    <TypeScriptCompile Include="wwwroot\app\Todo.ts" />
+    <TypeScriptCompile Include="wwwroot\main.ts" />
+  </ItemGroup>
+
+</Project>
